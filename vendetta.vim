@@ -8,10 +8,9 @@ let s:comment = "888888"
 let s:red = "DE575C"
 let s:orange = "ED934C"
 let s:yellow = "EBE971"
-" prev green color: 4AC254
 let s:green = "00b853"
-let s:aqua = "37e7e9"
-let s:blue = "7FBFF0"
+let s:aqua = "4ae5e8"
+let s:blue = "7fc6f0"
 let s:purple = "CF9FE6"
 let s:window = "4d5057"
 let s:tab_bg = "333333"
@@ -310,15 +309,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("phpVarSelector", s:yellow, "", "")
   call <SID>X("phpKeyword", s:yellow, "", "")
   call <SID>X("phpIdentifier", s:blue, "", "")
+  call <SID>X("phpType", s:aqua, "", "")
   "call <SID>X("phpOperator", s:yellow,"","")
   call <SID>X("phpRepeat", s:yellow, "", "")
-  call <SID>X("phpConditional", s:purple, "", "")
+  call <SID>X("phpConditional", s:blue, "", "")
   call <SID>X("phpStatement", s:yellow, "", "")
-  call <SID>X("phpMemberSelector", s:foreground, "", "")
+  call <SID>X("phpMemberSelector", s:blue, "", "")
   call <SID>X("phpStringSingle", s:orange, "", "")
   call <SID>X("phpDefine", s:red, "", "")
   call <SID>X("phpStorageClass", s:blue, "", "")
   call <SID>X("phpStructure", s:blue, "", "")
+  call <SID>X("phpParent", s:foreground, "", "")
 
   " Python Highlighting
   call <SID>X("pythonConditional", s:blue, "", "")
