@@ -316,10 +316,23 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("phpStatement", s:yellow, "", "")
   call <SID>X("phpMemberSelector", s:blue, "", "")
   call <SID>X("phpStringSingle", s:orange, "", "")
+  call <SID>X("phpStringDelimiter", s:foreground, "", "")
   call <SID>X("phpDefine", s:red, "", "")
   call <SID>X("phpStorageClass", s:blue, "", "")
   call <SID>X("phpStructure", s:blue, "", "")
   call <SID>X("phpParent", s:foreground, "", "")
+  call <SID>X("phpInclude", s:red, "", "")
+
+  " for https://github.com/StanAngeloff/php.vim
+  call <SID>X("phpMagicConstants", s:aqua, "", "")
+  call <SID>X("phpFCKeyword", s:red, "", "")
+  call <SID>X("phpSCKeyword", s:red, "", "")
+
+  " for default php.vim
+  call <SID>X("phpConstant", s:aqua, "", "")
+  call <SID>X("phpEnvVar", s:aqua, "", "")
+  call <SID>X("phpIntVar", s:aqua, "", "")
+  call <SID>X("phpCoreConstant", s:aqua, "", "")
 
   " Python Highlighting
   call <SID>X("pythonConditional", s:blue, "", "")
