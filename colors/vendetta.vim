@@ -356,6 +356,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("jsFunction", s:red, "", "")
   call <SID>X("jsClass", s:yellow, "", "")
   call <SID>X("jsOperator", s:foreground, "", "")
+  call <SID>X("jsOperatorWords", s:blue, "", "")
+  call <SID>X("jsKeyword", s:blue, "", "")
 
   " HTML Highlighting
   "call <SID>X("htmlTag", s:red,"","")
