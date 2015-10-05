@@ -350,6 +350,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("javaScriptNumber", s:orange, "", "")
   call <SID>X("javaScriptGlobal", s:yellow, "", "")
 
+  " for https://github.com/pangloss/vim-javascript
+  call <SID>X("jsModules", s:red, "", "")
+  call <SID>X("jsModuleWords", s:red, "", "")
+  call <SID>X("jsFunction", s:red, "", "")
+  call <SID>X("jsClass", s:yellow, "", "")
+  call <SID>X("jsOperator", s:foreground, "", "")
+
   " HTML Highlighting
   "call <SID>X("htmlTag", s:red,"","")
   "call <SID>X("htmlTagName", s:red,"","")
